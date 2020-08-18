@@ -1,0 +1,83 @@
+void whileloop(int x){
+  while(x != 0){
+    output x;
+    output "\n";
+    x--;
+  }
+}
+
+void ifelse(){
+ bool a;
+ a = false;
+ if(a){
+  output "wrong";
+  output "\n";
+  }
+  else{
+    output "correct";
+    output "\n";
+    }
+  }
+
+void binaryOp(){
+  int local1;
+  int local2;
+  int local3;
+  local1 = 3;
+  local2 = 10;
+  local3 = 2;
+  output(local2 - local1);
+  output "\n";
+  output(local2 * local1);
+  output "\n";
+  output(local2 / local3);
+  output "\n";
+}
+
+void binaryOp1(){
+  bool a;
+  bool b;
+  a = 3 < 5;
+  output a;
+  output "\n";
+  a = 7 <= 5;
+  output a;
+  output "\n";
+  b = false && false;
+  output b;
+  output "\n";
+  b = (3 < 5) || false;
+  output b;
+  output "\n";
+}
+
+void unaryOp(){
+  int a;
+  bool b;
+  a = -15;
+  b = 7 <= 10;
+  output a;
+  output "\n";
+  b = !b;
+  output b;
+  output "\n";
+}
+
+int fib(int n)
+{
+    if (n <= 1) {
+      return n;
+ }
+ return fib(n-1) - -fib(n-2);
+}
+
+int main(){
+  ifelse();
+  whileloop(5);
+  binaryOp();
+  binaryOp1();
+  unaryOp();
+  output "The 20th term of the series is: ";
+  output fib(20);
+  output "\n";
+}
