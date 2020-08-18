@@ -1,0 +1,11 @@
+void fn_output(int a, int b){
+	output a;
+	output b;
+	output "tesd3";
+}
+
+int main(){
+     fn_output(1, 2);
+     return(0);
+}
+

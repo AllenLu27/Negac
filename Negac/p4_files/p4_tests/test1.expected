@@ -1,0 +1,42 @@
+[BEGIN GLOBALS]
+str_0 "hello"
+[END GLOBALS]
+[BEGIN fn LOCALS]
+a (formal)
+tmp0 (tmp)
+[END fn LOCALS]
+enter fn
+getin 1 a
+tmp0 := a MULT 2
+setout 1 tmp0
+goto lbl_0
+lbl_0: leave fn
+[BEGIN main LOCALS]
+b (local)
+c (local)
+tmp0 (tmp)
+tmp1 (tmp)
+tmp2 (tmp)
+[END main LOCALS]
+enter main
+b := 2
+b := b SUB 1
+setin 1 4
+call fn
+getout 1 tmp0
+b := tmp0
+OUTPUT b
+tmp1 := 4 SUB 5
+c := tmp1
+tmp2 := c LT 1
+iffalse tmp2 goto lbl_2
+c := 5
+goto lbl_3
+lbl_2: nop
+setout 1 0
+goto lbl_1
+setout 1 1
+goto lbl_1
+lbl_3: nop
+OUTPUT str_0
+lbl_1: EXIT

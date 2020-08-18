@@ -1,0 +1,21 @@
+int fn(int a){
+	return(a * 2);
+}
+
+int main(){
+	int b;
+	int c;
+	b = 2;
+	b --;
+	b = fn(4);
+	output b;
+	c = 4 - 5;
+	if(c < 1){
+	    c = 5;
+	}
+	else{
+	    return(0);
+	    return(1);
+	}
+	output "hello";
+}

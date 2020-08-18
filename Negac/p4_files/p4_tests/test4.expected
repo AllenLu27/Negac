@@ -1,0 +1,39 @@
+[BEGIN GLOBALS]
+[END GLOBALS]
+[BEGIN main LOCALS]
+a (local)
+b (local)
+c (local)
+d (local)
+g (local)
+e (local)
+tmp0 (tmp)
+tmp1 (tmp)
+tmp2 (tmp)
+tmp3 (tmp)
+tmp4 (tmp)
+tmp5 (tmp)
+tmp6 (tmp)
+tmp7 (tmp)
+tmp8 (tmp)
+[END main LOCALS]
+enter main
+tmp0 := c SUB d
+a := tmp0
+tmp1 := c MULT 2
+a := tmp1
+tmp2 := d DIV 3
+a := tmp2
+tmp3 := 0 AND 0
+b := tmp3
+tmp4 := g OR e
+b := tmp4
+tmp5 := c LT d
+b := tmp5
+tmp6 := d LTE c
+e := tmp6
+tmp7 := NOT b
+b := tmp7
+tmp8 := NEG a
+a := tmp8
+lbl_0: EXIT

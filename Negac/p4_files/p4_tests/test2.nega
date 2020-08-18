@@ -1,0 +1,23 @@
+void fn_while(){
+	int z;
+	z = 10;
+     while(z < 10){
+	z--;
+	}
+}
+
+void fn_while2(){
+       bool a;
+       bool b;
+       int c;
+       c = 20;
+       a = false;
+       b = false;
+       while(a){
+	while(b){
+       	  if(b){
+		c--;
+	       }
+       }
+    }
+}

@@ -1,0 +1,41 @@
+[BEGIN GLOBALS]
+str_0 "The 7th term of the series is: "
+[END GLOBALS]
+[BEGIN fib LOCALS]
+n (formal)
+tmp0 (tmp)
+tmp1 (tmp)
+tmp2 (tmp)
+tmp3 (tmp)
+tmp4 (tmp)
+tmp5 (tmp)
+tmp6 (tmp)
+[END fib LOCALS]
+enter fib
+getin 1 n
+tmp0 := n LTE 1
+iffalse tmp0 goto lbl_1
+setout 1 n
+goto lbl_0
+lbl_1: nop
+tmp1 := n SUB 1
+setin 1 tmp1
+call fib
+tmp3 := n SUB 2
+setin 1 tmp3
+call fib
+tmp5 := NEG tmp4
+tmp6 := tmp2 SUB tmp5
+setout 1 tmp6
+goto lbl_0
+lbl_0: leave fib
+[BEGIN main LOCALS]
+tmp0 (tmp)
+[END main LOCALS]
+enter main
+OUTPUT str_0
+setin 1 7
+call fib
+OUTPUT tmp0
+lbl_2: EXIT
+

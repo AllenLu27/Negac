@@ -1,0 +1,17 @@
+int main(){
+	int a;
+	bool b;
+	int c;
+	int d;
+	bool g;
+	bool e;
+	a = c - d;
+	a = c * 2;
+	a = d / 3;
+	b = false && false;
+	b = g || e;
+	b = c < d;
+	e = d <= c;
+	b = !b;
+	a = -a;
+}

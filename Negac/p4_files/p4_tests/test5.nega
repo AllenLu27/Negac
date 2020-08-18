@@ -1,0 +1,16 @@
+int nestdouble(int a, int b){
+   if(b < 3){
+     nestdouble(a, b-1);
+  }
+   return(a*2);
+}
+
+void nothing(){
+   output "nothing";
+}
+
+int main(){
+    int a;
+    a = 3;
+   nestdouble(a, 6);
+}

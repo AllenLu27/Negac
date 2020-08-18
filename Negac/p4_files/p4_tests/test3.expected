@@ -1,0 +1,23 @@
+[BEGIN GLOBALS]
+str_0 "tesd3"
+[END GLOBALS]
+[BEGIN fn_output LOCALS]
+a (formal)
+b (formal)
+[END fn_output LOCALS]
+enter fn_output
+getin 1 a
+getin 2 b
+OUTPUT a
+OUTPUT b
+OUTPUT str_0
+lbl_0: leave fn_output
+[BEGIN main LOCALS]
+[END main LOCALS]
+enter main
+setin 1 1
+setin 2 2
+call fn_output
+setout 1 0
+goto lbl_1
+lbl_1: EXIT

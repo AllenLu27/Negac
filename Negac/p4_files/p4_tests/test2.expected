@@ -1,0 +1,36 @@
+[BEGIN GLOBALS]
+[END GLOBALS]
+[BEGIN fn_while LOCALS]
+z (local)
+tmp0 (tmp)
+[END fn_while LOCALS]
+enter fn_while
+z := 10
+lbl_1: nop
+tmp0 := z LT 10
+iffalse tmp0 goto lbl_2
+z := z SUB 1
+goto lbl_1
+lbl_2: nop
+lbl_0: leave fn_while
+[BEGIN fn_while2 LOCALS]
+a (local)
+b (local)
+c (local)
+[END fn_while2 LOCALS]
+enter fn_while2
+c := 20
+a := 0
+b := 0
+lbl_4: nop
+iffalse a goto lbl_5
+lbl_6: nop
+iffalse b goto lbl_7
+iffalse b goto lbl_8
+c := c SUB 1
+lbl_8: nop
+goto lbl_6
+lbl_7: nop
+goto lbl_4
+lbl_5: nop
+lbl_3: leave fn_while2

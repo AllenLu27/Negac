@@ -1,0 +1,40 @@
+[BEGIN GLOBALS]
+str_0 "nothing"
+[END GLOBALS]
+[BEGIN nestdouble LOCALS]
+a (formal)
+b (formal)
+tmp0 (tmp)
+tmp1 (tmp)
+tmp2 (tmp)
+tmp3 (tmp)
+[END nestdouble LOCALS]
+enter nestdouble
+getin 1 a
+getin 2 b
+tmp0 := b LT 3
+iffalse tmp0 goto lbl_1
+setin 1 a
+tmp1 := b SUB 1
+setin 2 tmp1
+call nestdouble
+lbl_1: nop
+tmp3 := a MULT 2
+setout 1 tmp3
+goto lbl_0
+lbl_0: leave nestdouble
+[BEGIN nothing LOCALS]
+[END nothing LOCALS]
+enter nothing
+OUTPUT str_0
+lbl_2: leave nothing
+[BEGIN main LOCALS]
+a (local)
+tmp0 (tmp)
+[END main LOCALS]
+enter main
+a := 3
+setin 1 a
+setin 2 6
+call nestdouble
+lbl_3: EXIT
