@@ -1,0 +1,11 @@
+struct base {
+ int a;
+};
+
+void main() {
+ struct base a;
+ if(a.a != 5) {
+ a = false;
+ }
+}
+

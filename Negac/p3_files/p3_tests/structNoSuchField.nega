@@ -1,0 +1,4 @@
+struct TheStruct{
+	int a;
+	struct Nonesuch nope;
+};

@@ -1,0 +1,4 @@
+void v(){
+	bool b;
+	b = -false;
+}

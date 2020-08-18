@@ -1,0 +1,5 @@
+int fn(){
+	int a; 
+	a = 2;
+	return false;
+}

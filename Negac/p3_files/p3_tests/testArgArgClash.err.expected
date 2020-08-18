@@ -1,0 +1,3 @@
+FATAL [1,19]: Multiply declared identifier
+FATAL [3,6]: Multiply declared identifier
+Semantic analysis failed

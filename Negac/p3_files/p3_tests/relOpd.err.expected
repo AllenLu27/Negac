@@ -1,0 +1,3 @@
+FATAL [3,8]: Relational operator applied to non-numeric operand
+FATAL [3,16]: Relational operator applied to non-numeric operand
+Semantic analysis failed

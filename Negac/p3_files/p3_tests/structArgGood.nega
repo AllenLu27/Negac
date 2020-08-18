@@ -1,0 +1,6 @@
+struct name {
+ int a;
+};
+
+void fn(struct name b) {
+}

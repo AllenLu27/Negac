@@ -1,0 +1,12 @@
+int b(){
+	bool b;
+	if(false){
+		bool b;
+		while (false){
+			int b;
+			if (false){
+				int b;
+			}
+		}
+	}
+}

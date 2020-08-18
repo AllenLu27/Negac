@@ -1,0 +1,5 @@
+struct foo {
+    int val;
+};
+struct foo foo;
+struct foo bar;

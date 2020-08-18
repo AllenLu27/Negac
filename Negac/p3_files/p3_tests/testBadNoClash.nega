@@ -1,0 +1,4 @@
+int fn(){
+	void a;
+	int a;
+}

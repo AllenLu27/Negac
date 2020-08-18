@@ -1,0 +1,3 @@
+FATAL [2,2]: Invalid assignment operand
+FATAL [2,7]: Invalid assignment operand
+Semantic analysis failed

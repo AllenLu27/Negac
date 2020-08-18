@@ -1,0 +1,7 @@
+int callee(){
+
+}
+
+int fn(int a){
+	    callee(1,1,1,1,1,1,b);
+}

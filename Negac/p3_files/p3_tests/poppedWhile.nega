@@ -1,0 +1,6 @@
+void fn(){
+	while (false){
+		int c;
+	}
+	c = 1;
+}

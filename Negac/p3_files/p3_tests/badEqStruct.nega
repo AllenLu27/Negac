@@ -1,0 +1,10 @@
+struct S {
+	bool field;
+};
+
+void main(){
+	struct S a;
+	struct S b;
+	if (a != b){
+	}
+}

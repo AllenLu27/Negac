@@ -1,0 +1,3 @@
+FATAL [6,18]: Undeclared identifier
+FATAL [6,16]: Arithmetic operator applied to invalid operand
+Semantic analysis failed

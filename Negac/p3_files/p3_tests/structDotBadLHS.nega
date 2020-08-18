@@ -1,0 +1,9 @@
+struct TheStruct{
+	int a;
+	struct TheStruct& inner;
+};
+
+void f(){
+	struct TheStruct mine;
+	mine.nope = 1;
+}

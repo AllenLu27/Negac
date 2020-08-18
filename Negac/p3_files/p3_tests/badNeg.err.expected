@@ -1,0 +1,3 @@
+FATAL [3,7]: Logical operator applied to non-bool operand
+FATAL [3,4]: Invalid assignment operation
+Semantic analysis failed

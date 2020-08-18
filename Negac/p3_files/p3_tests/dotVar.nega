@@ -1,0 +1,4 @@
+void fn(){
+	int a;
+	a = a.b.c;
+}

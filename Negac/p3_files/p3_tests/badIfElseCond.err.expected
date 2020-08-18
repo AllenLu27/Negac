@@ -1,0 +1,3 @@
+FATAL [3,6]: Undeclared identifier
+FATAL [2,6]: Non-bool expression used as an if condition
+Semantic analysis failed

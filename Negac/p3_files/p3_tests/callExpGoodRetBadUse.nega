@@ -1,0 +1,4 @@
+int fn(){
+	bool a;
+	a = fn();
+}

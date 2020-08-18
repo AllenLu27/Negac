@@ -1,0 +1,7 @@
+FATAL [2,5]: Undeclared identifier
+FATAL [2,9]: Undeclared identifier
+FATAL [2,13]: Undeclared identifier
+FATAL [2,17]: Undeclared identifier
+FATAL [2,21]: Undeclared identifier
+FATAL [2,26]: Undeclared identifier
+Semantic analysis failed

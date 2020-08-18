@@ -1,0 +1,6 @@
+int fn() {
+    if(5 != 5) {
+        bool b;
+        b = !false;
+    }
+}

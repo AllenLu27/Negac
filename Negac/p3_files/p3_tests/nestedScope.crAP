@@ -1,0 +1,12 @@
+int fn(){
+	int c;
+	if (true){
+		int c;
+		c = 1;
+	}
+
+	while(true){
+		bool c;
+		c = true;
+	}
+}

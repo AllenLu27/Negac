@@ -1,0 +1,3 @@
+FATAL [6,25]: Undeclared identifier
+FATAL [6,6]: Function call with wrong number of args
+Semantic analysis failed

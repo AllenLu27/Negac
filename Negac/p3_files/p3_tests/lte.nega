@@ -1,0 +1,4 @@
+int main2 () {
+    bool a;
+    a = (100000 <= myVar2) ;
+}

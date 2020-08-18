@@ -1,0 +1,8 @@
+struct TheStruct{
+	int a;
+};
+
+void f(){
+	struct TheStruct mine;
+	mine.a = 1;
+}

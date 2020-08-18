@@ -1,0 +1,7 @@
+int fn(){
+}
+
+int fn(){
+	int a;
+	bool a;
+}

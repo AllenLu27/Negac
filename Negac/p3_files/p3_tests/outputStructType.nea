@@ -1,0 +1,7 @@
+struct S{
+	int field;
+};
+
+void main(){
+	output S;
+}

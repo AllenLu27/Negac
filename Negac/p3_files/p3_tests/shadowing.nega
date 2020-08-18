@@ -1,0 +1,7 @@
+int foo(){
+	int a;
+	if (false){
+		int a;
+		a = 1;
+	}
+}

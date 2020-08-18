@@ -1,0 +1,5 @@
+FATAL [2,5]: Multiply declared identifier
+FATAL [3,8]: Undeclared identifier
+FATAL [10,8]: Multiply declared identifier
+FATAL [11,10]: Invalid type in declaration
+Semantic analysis failed

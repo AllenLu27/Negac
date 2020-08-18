@@ -1,0 +1,3 @@
+void fn(){} 
+int fn2(){} 
+bool fn3(){}

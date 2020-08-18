@@ -1,0 +1,12 @@
+int foo;
+int foo () {
+    if(invalidDecl) {
+        return 0;
+    }
+}
+struct Foo {
+    int a;
+};
+struct Foo {
+    void a;
+};

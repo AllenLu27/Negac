@@ -1,0 +1,5 @@
+void fn(void a){
+	void b;
+	a = 1;
+	b = 2;
+}

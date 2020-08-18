@@ -1,0 +1,4 @@
+void fn(){
+	while (1){ }
+	while (a){ }
+}

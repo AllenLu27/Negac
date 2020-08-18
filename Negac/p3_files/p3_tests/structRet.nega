@@ -1,0 +1,13 @@
+struct S {
+	int a;
+};
+
+struct S fn(){
+	struct S myStruct;
+	return myStruct;
+}
+
+struct S & fn2(){
+	struct S myStruct;
+	return myStruct;
+}

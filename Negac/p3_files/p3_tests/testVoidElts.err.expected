@@ -1,0 +1,4 @@
+FATAL [1,13]: Invalid type in declaration
+FATAL [2,7]: Invalid type in declaration
+FATAL [3,7]: Invalid type in declaration
+Semantic analysis failed

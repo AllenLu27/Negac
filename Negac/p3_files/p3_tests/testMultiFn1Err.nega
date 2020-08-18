@@ -1,0 +1,6 @@
+int fn(){
+}
+
+int fn(){
+	int fn;
+}

@@ -1,0 +1,8 @@
+struct S {
+	int a;
+};
+
+int fn(){
+	struct S myS;
+	output S;
+}

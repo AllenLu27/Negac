@@ -1,0 +1,3 @@
+void fn(){
+	void v;
+}

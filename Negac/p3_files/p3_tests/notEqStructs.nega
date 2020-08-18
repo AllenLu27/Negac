@@ -1,0 +1,10 @@
+struct A {
+	bool field;
+};
+
+bool v(){
+	struct A first;
+	struct A second;
+	return first != second;
+}
+

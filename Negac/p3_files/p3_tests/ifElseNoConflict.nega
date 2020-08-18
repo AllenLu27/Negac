@@ -1,0 +1,4 @@
+void fn(){
+	if (false){ int var; }
+	else { int var; }
+}

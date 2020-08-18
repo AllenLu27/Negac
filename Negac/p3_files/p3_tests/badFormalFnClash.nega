@@ -1,0 +1,2 @@
+bool foo(){ }
+void main(void foo){ }

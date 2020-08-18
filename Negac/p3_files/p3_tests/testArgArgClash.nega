@@ -1,0 +1,4 @@
+int fn(int a, int a){
+	int b;
+	int b;
+}

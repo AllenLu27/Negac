@@ -1,0 +1,3 @@
+bool f(int a) {
+  f(b*4);
+}

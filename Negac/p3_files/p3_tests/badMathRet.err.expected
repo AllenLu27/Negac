@@ -1,0 +1,3 @@
+FATAL [2,9]: Arithmetic operator applied to invalid operand
+FATAL [2,15]: Bad return value
+Semantic analysis failed

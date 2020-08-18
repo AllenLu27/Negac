@@ -1,0 +1,8 @@
+struct S{
+	bool f1;
+};
+
+struct S{
+	bool f2;
+};
+

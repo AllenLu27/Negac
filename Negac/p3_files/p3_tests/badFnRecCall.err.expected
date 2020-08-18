@@ -1,0 +1,3 @@
+FATAL [1,21]: Invalid type in declaration
+FATAL [2,3]: Undeclared identifier
+Semantic analysis failed

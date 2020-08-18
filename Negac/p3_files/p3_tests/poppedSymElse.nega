@@ -1,0 +1,7 @@
+void fn(){
+	if(false){
+		int c;
+	} else {
+		c = 1;
+	}
+}
