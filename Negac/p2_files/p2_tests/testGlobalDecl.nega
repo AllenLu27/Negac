@@ -1,0 +1,61 @@
+int main(int args, int x, int y){
+	if(x<y){
+		int k;
+		k = 2;
+	}
+	if(x!=y)
+	{
+		bool z;
+		z = 1;
+	}
+	if(x<=y)
+	{
+		struct Mystruct m_test;
+	}
+	else
+	{
+		return("test_else");
+	}
+	return("test");
+}
+
+struct Mystruct{
+	int x;
+	int& b;
+	bool q;
+	bool& c;
+};
+
+int return_test(struct MyStruct& test){
+	return;
+	return(3 - 5);
+	return(3 - 5 - 7);
+	return(3 * 5);
+	return(3 * 5 * 7);
+	return(3 / 5);
+	return(3 / 5 / 7);
+	return(3 - 5 * 7 / 9);
+	return("Test");
+	return(!3);
+	return(-3);
+}
+
+bool while_test(bool x, bool y){
+	int counter;
+	input a.b;
+	input my_id;
+	output "test_expression";
+	output (3!=5);
+	while(x != y)
+	{
+		counter--;
+		x = y;
+	}
+	myfunc();
+	myfunc_args(x, y);
+	while(false){
+		a.b.test = 3;
+		a.c--;
+	}
+	return(nullref);
+}

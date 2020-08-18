@@ -1,0 +1,87 @@
+/**********************************************************************
+ Grammar for Negatron programs
+ **********************************************************************/
+program         ::= globals
+
+globals         ::= globals decl
+                | /* epsilon */
+
+decl            ::= varDecl SEMICOLON
+                | structDecl SEMICOLON
+                | fnDecl
+
+varDecl         ::= type id
+
+type            ::= INT maybeRef
+                |   BOOL maybeRef
+                |   VOID
+                |   STRUCT id maybeRef
+
+maybeRef        ::= REF
+                | /* epsilon */
+
+structDecl      ::= STRUCT id LCURLY structBody RCURLY
+
+structBody      ::= structBody varDecl SEMICOLON
+                |   varDecl SEMICOLON
+
+fnDecl          ::= type id formals fnBody
+
+formals         ::= LPAREN RPAREN
+                | LPAREN formalsList RPAREN
+
+formalsList     ::= formalDecl
+                | formalDecl COMMA formalsList
+
+formalDecl      ::= type id
+
+fnBody          ::= LCURLY stmtList RCURLY
+
+stmtList        ::= stmtList stmt
+                | /* epsilon */
+
+stmt            ::= varDecl SEMICOLON
+                | assignExp SEMICOLON
+                | loc DASHDASH SEMICOLON
+                | INPUT loc SEMICOLON
+                | OUTPUT exp SEMICOLON
+                | IF LPAREN exp RPAREN LCURLY stmtList RCURLY
+                | IF LPAREN exp RPAREN LCURLY stmtList RCURLY ELSE LCURLY stmtList RCURLY
+                | WHILE LPAREN exp RPAREN LCURLY stmtList RCURLY
+                | RETURN exp SEMICOLON
+                | RETURN SEMICOLON
+                | fncall SEMICOLON
+
+assignExp       ::= loc ASSIGN exp
+
+fncall          ::=  id LPAREN RPAREN   // fn call with no args
+                | id LPAREN actualsList RPAREN  // with args
+                
+exp             ::= assignExp
+                | exp DASH exp
+                | exp STAR exp
+                | exp SLASH exp
+                | exp AND exp
+                | exp OR exp
+                | exp NOTEQUALS exp
+                | exp LESS exp
+                | exp LESSEQ exp
+                | NOT exp
+                | DASH term
+                | term
+
+actualsList     ::= exp
+                | actualsList COMMA exp
+
+term            ::= loc
+                | INTLITERAL
+                | STRLITERAL
+                | FALSE
+                | NULLREF
+                | LPAREN exp RPAREN
+                | fncall
+
+loc             ::= id
+                | loc DOT id
+
+id              ::= ID
